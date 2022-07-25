@@ -1,8 +1,12 @@
-a = input("Введите строку: ")
-b = input("Введите символ: ")
-c = " "
-for i in a:
-    if i != b:
-        c += i
-        print("результат: ")
-        print(c)
+try:
+    a = int(input("Введите первое число с клавиатуры:"))
+    b = int(input("Введите второе число:"))
+    result = int(a)/(b)
+except ZeroDivisionError:
+    print("Все плохо")
+
+else:
+    print("Результат возвести в квадрат:", result**2)
+
+finally:
+    print("конец всего")

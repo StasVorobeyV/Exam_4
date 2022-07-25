@@ -10,14 +10,18 @@ from random import random
 
 
 a = round(random() * 10)
-b = 1
-print("computer riddle  number. what is number. 10 attempts: ")
-while b <= 10:
-    x = int(input(str(b) + " - attempts: "))
-    if x > a :
-        print("much")
-    elif x < a:
-        print("few")
+b = input(black)
+c = input(red)
+print("компьютер загадал число. у вас 10 попыток: ")
+while b <= 10 and c <= 10:
+    x = int(input(str(b + c) + " - attempts: "))
+    if x > a + b:
+        elif x > a + c:
+        print("много")
+    elif x < a + b:
+        print("много")
+    elif x < a + c:
+        print("мало")
     else:
         print("Yes, this is True number, bingo, we winner with %d - attempt" %b)
         break
